@@ -6,7 +6,7 @@ cardNumber = input("Enter your card number ")
 
 def checkCard(cardNumber):
     cardNumber=str(cardNumber)
-    if (len(cardNumber.split('-')) == 1 and len(cardNumber) == 16) or (len(cardNumber.split('-')) == 4 and all(len(i) == 4 for i in cardNumber.split("-"))):
+    ///if (len(cardNumber.split('-')) == 1 and len(cardNumber) == 16) or (len(cardNumber.split('-')) == 4 and all(len(i) == 4 for i in cardNumber.split("-"))):
         cardNumber = cardNumber.replace("-", "")
         try:
             int(cardNumber)
